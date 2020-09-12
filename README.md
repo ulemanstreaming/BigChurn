@@ -2,7 +2,7 @@
 Code for dealing with too much and too detailed data in a Data Science project for a churn use case
 
 ## Assets
-1. Notebook [Generate a Subset Selector for a Large Dataset](Generate_Subset_By_Column_Spark.jupyter-py35.ipynb)
+1. Notebook [Generate a Subset Selector for a Large Dataset](Generate_Subset_By_Column_Spark.ipynb)
 
    A Spark-based notebook that supports creating a subset of a large dataset consisting of multiple source tables, each table split into multiple files (for, example, representing multiple time periods). The purpose of subsetting is to avoid getting bogged down in the highly iterative work of data exploration and feature engineering. More data may be better in training a model, but if it takes hours for every variation tried, it is difficult to make progress in coming up with the best approach.
 
@@ -10,7 +10,7 @@ Code for dealing with too much and too detailed data in a Data Science project f
 
    The subsampling is randomized (seeded for repeatability) and with a configurable target class balance. In addition, it can take into account a minimum number periods during which a selected ID must have been present. (In other words, you need a certain number of periods of history to reveal a pattern that might predict churn.)
 
-1. Notebook [Using Spark to Prepare a Large, Detailed Dataset](Subset_Transform_Aggregate_Combine_Files_Spark.jupyter-py35.ipynb)
+1. Notebook [Using Spark to Prepare a Large, Detailed Dataset](Subset_Transform_Aggregate_Combine_Files_Spark.ipynb)
 
    This notebook illustrates the following operations on a large dataset consisting of multiple files representing detailed records over several data collection periods for several distinct source tables.
 
@@ -21,7 +21,7 @@ Code for dealing with too much and too detailed data in a Data Science project f
    
    The result is a single CSV file. This notebook relies on the [spark1csv.py](spark1csv.py) module.
 
-1. Notebook [Prepare Fictitious Churn Data](Prepare%20Sample%20Churn%20Data.jupyter-py35.ipynb)
+1. Notebook [Prepare Fictitious Churn Data](Prepare%20Sample%20Churn%20Data.ipynb)
 
    This notebook uses a publicly available fictitious dataset for a telco churn use case to generate data structured as multiple monthly files of details on customers and calls.
    
